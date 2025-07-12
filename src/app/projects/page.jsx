@@ -2,8 +2,8 @@ import ProjectCard from "../components/project-card";
 
 export default function Projects() {
   return (
-    <div className="max-w-5xl mx-auto py-8">
-      <h2 className="text-3xl font-bold ml-6 mb-6">Projects</h2>
+    <div className="max-w-5xl mx-auto py-8 px-4">
+      <h2 className="text-3xl font-bold ml-6 mb-6 text-[var(--blue5)]">Projects</h2>
       <div className="flex flex-col gap-6">
         <ProjectCard
           title="Lotusify"
