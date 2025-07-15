@@ -8,13 +8,13 @@ export default function Navbar() {
   const pathname = usePathname();
 
   const navLinks = [
-    { href: "/about", label: "About" },
-    { href: "/projects", label: "Projects" },
-    { href: "/contact", label: "Contact" },
+    { href: "#about", label: "About" },
+    { href: "#projects", label: "Projects" },
+    { href: "#contact", label: "Contact" },
   ];
 
   return (
-    <nav className="bg-(--navbar-bg) text-white p-3 sm:p-5 relative">
+    <nav className="bg-(--navbar-bg) text-white p-3 sm:p-5 relative sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold hover:text-gray-300 " onClick={() => setIsOpen(false)}>
           Ethan Sitnek

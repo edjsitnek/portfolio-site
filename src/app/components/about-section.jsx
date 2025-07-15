@@ -11,7 +11,7 @@ const techStack = [
   { name: "Kotlin", src: "/icons/jb-kotlin-svgrepo-com.svg" },
 ];
 
-export default function About() {
+export default function AboutSection() {
   return (
     <div className="max-w-5xl mx-auto py-8 px-4 md:flex md:gap-10">
 

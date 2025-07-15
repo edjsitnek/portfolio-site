@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-export default function Contact() {
+export default function ContactSection() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
   const [status, setStatus] = useState("");
 
@@ -68,7 +68,7 @@ export default function Contact() {
         >
           {status === "loading" ? "Sending..." : "Send"}
         </button>
-        {status === "sent" && <div className="text-green-600">Message sent! Thanks for reaching out.</div>}
+        {status === "sent" && <div className="text-[var(--blue5)]">Message sent! Thanks for reaching out.</div>}
         {status === "error" && <div className="text-red-500">There was an error. Please try again later.</div>}
       </form>
     </div>
