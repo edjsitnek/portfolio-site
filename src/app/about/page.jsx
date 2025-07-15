@@ -42,8 +42,8 @@ export default function About() {
               <Image
                 src={tech.src}
                 alt={tech.name}
-                width={40}
-                height={40}
+                width={50}
+                height={50}
                 className="mb-2 transition-transform duration-200 group-hover:scale-125"
                 title={tech.name}
               />
