@@ -13,12 +13,21 @@ export default function Navbar() {
     { href: "#contact", label: "Contact" },
   ];
 
+  function handleNameClick() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+    window.history.pushState({}, '', '/');
+    setIsOpen(false);
+  }
+
   return (
     <nav className="bg-(--navbar-bg) text-white p-3 sm:p-5 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Link href="/" className="text-2xl font-bold hover:text-gray-300 " onClick={() => setIsOpen(false)}>
+        <button onClick={() => {
+          handleNameClick();
+        }}
+          className="text-2xl font-bold hover:text-gray-300 bg-transparent border-none cursor-pointer">
           Ethan Sitnek
-        </Link>
+        </button>
 
         {/* Desktop Links */}
         <div className="hidden md:flex space-x-4 md:space-x-8">

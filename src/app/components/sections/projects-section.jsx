@@ -1,8 +1,8 @@
-import ProjectCard from "../components/project-card";
+import ProjectCard from "../project-card";
 
 export default function ProjectsSection() {
   return (
-    <div className="max-w-5xl mx-auto pt-24 md:py-24 px-4">
+    <div className="max-w-5xl mx-auto pt-24 px-4">
       <h2 className="text-4xl font-bold md:ml-6 mb-8 text-center md:text-justify text-[var(--blue5)]">Projects</h2>
       <div className="flex flex-col gap-6">
         <ProjectCard

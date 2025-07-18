@@ -31,7 +31,7 @@ export default function ContactSection() {
   }
 
   return (
-    <div className="max-w-5xl min-h-full mx-auto py-24 px-4">
+    <div className="max-w-5xl min-h-full mx-auto pt-24 pb-18 md:py-40 px-4">
       <h2 className="text-4xl font-bold md:ml-6 mb-8 text-center md:text-justify text-[var(--blue5)]">Contact</h2>
       <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
         <input

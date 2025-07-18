@@ -1,0 +1,25 @@
+import Image from 'next/image'
+
+export default function HeroSection() {
+  return (
+    <div className="min-h-screen bg-[var(--background)] flex flex-col justify-center items-center text-white p-6 md:p-12">
+      <Image
+        src="/images/profile-pic.png"
+        alt="Small picture of Ethan Sitnek"
+        width={150}
+        height={150}
+        className="object-cover rounded-lg"
+        sizes="(min-width: 768px) 40vw, 100vw"
+        priority
+      />
+      <h1 className="text-6xl font-bold m-2 text-center text-[var(--blue5)]">Ethan Sitnek</h1>
+      <h2 className="text-3xl mb-10">Web Developer</h2>
+
+
+      <div className="flex gap-4">
+        <a href="#projects" className="bg-[var(--blue5)] px-6 py-2 rounded text-[var(--background)] font-semibold hover:bg-[var(--blue4)]">View My Work</a>
+        <a href="#contact" className="border border-[var(--blue5)] px-6 py-2 rounded text-[var(--blue5)] font-semibold hover:bg-[var(--blue4)] hover:text-[var(--background)]">Contact</a>
+      </div>
+    </div>
+  );
+}
