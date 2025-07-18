@@ -7,8 +7,8 @@ import ContactSection from './components/contact-section';
 export default function Page() {
   return (
     <main className="bg-[var(--background)] text-white">
-      <Navbar />
       <Home />
+      <Navbar />
       <section id="about"><AboutSection /></section>
       <section id="projects"><ProjectsSection /></section>
       <section id="contact"><ContactSection /></section>
@@ -18,7 +18,7 @@ export default function Page() {
 
 function Home() {
   return (
-    <div className="bg-[var(--background)] flex flex-col justify-center items-center text-white p-6 md:p-12">
+    <div className="min-h-screen bg-[var(--background)] flex flex-col justify-center items-center text-white p-6 md:p-12">
       <Image
         src="/images/profile-pic.png"
         alt="Small picture of Ethan Sitnek"
@@ -28,8 +28,8 @@ function Home() {
         sizes="(min-width: 768px) 40vw, 100vw"
         priority
       />
-      <h1 className="text-5xl font-bold m-2 text-[var(--blue5)]">Ethan Sitnek</h1>
-      <h2 className="text-2xl mb-10">Web Developer</h2>
+      <h1 className="text-6xl font-bold m-2 text-[var(--blue5)]">Ethan Sitnek</h1>
+      <h2 className="text-3xl mb-10">Web Developer</h2>
 
 
       <div className="flex gap-4">

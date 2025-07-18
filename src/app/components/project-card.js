@@ -17,10 +17,10 @@ export default function ProjectCard({ title, description, technologies, liveLink
 
         {/* Content on the right */}
         <div className="md:w-3/5 w-full p-4 flex flex-col justify-between">
-          <h3 className="text-xl font-semibold mb-3">{title}</h3>
-          <p className="text-gray-200 mb-4">{description}</p>
+          <h3 className="text-xl md:text-2xl text-center md:text-left font-semibold mb-3">{title}</h3>
+          <p className="md:text-lg text-gray-200 mb-4">{description}</p>
 
-          <div className="flex flex-wrap gap-2 mb-4">
+          <div className="flex flex-wrap justify-center md:justify-start gap-2 mb-4">
             {technologies.map((tech, index) => (
               <span
                 key={index}
@@ -31,7 +31,7 @@ export default function ProjectCard({ title, description, technologies, liveLink
             ))}
           </div>
 
-          <div className="flex gap-4">
+          <div className="flex justify-center md:justify-start gap-4">
             {liveLink && (
               <a
                 href={liveLink}
@@ -40,6 +40,13 @@ export default function ProjectCard({ title, description, technologies, liveLink
                 className="bg-[var(--blue4)] text-white px-4 py-2 rounded hover:bg-[var(--blue5)]"
               >
                 Live Demo
+                <Image
+                  src="/icons/external-link-svgrepo-com.svg"
+                  alt="External link icon"
+                  width={16}
+                  height={16}
+                  className="inline ml-1"
+                />
               </a>
             )}
             {githubLink && (
@@ -50,6 +57,13 @@ export default function ProjectCard({ title, description, technologies, liveLink
                 className="bg-[var(--blue4)] text-white px-4 py-2 rounded hover:bg-[var(--blue5)]"
               >
                 GitHub
+                <Image
+                  src="/icons/github-svgrepo-com.svg"
+                  alt="GitHub icon"
+                  width={18}
+                  height={18}
+                  className="inline ml-1 mb-1"
+                />
               </a>
             )}
           </div>
