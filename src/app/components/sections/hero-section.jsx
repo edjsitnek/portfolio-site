@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function HeroSection() {
   return (
-    <div className="min-h-screen bg-[var(--background)] flex flex-col justify-center items-center text-white p-6 md:p-12">
+    <div className="min-h-screen bg-gradient-to-b from-[var(--blue3)] via-[var(--background)] to-[var(--blue1)] flex flex-col justify-center items-center text-white p-6 md:p-12">
       <Image
         src="/images/profile-pic.png"
         alt="Small picture of Ethan Sitnek"
@@ -17,8 +17,23 @@ export default function HeroSection() {
 
 
       <div className="flex gap-4">
-        <a href="#projects" className="bg-[var(--blue5)] px-6 py-2 rounded text-[var(--background)] font-semibold hover:bg-[var(--blue4)]">View My Work</a>
-        <a href="#contact" className="border border-[var(--blue5)] px-6 py-2 rounded text-[var(--blue5)] font-semibold hover:bg-[var(--blue4)] hover:text-[var(--background)]">Contact</a>
+        <a href="#projects" className="bg-[var(--blue5)] px-6 py-2 rounded text-[var(--background)] font-semibold hover:bg-[var(--blue4)]">
+          View My Work
+        </a>
+        <a href="#contact" className="border border-[var(--blue5)] px-6 py-2 rounded text-[var(--blue5)] font-semibold hover:bg-[var(--blue4)] hover:text-[var(--background)]">
+          Contact
+        </a>
+      </div>
+      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2">
+        <a href="#about" aria-label="Scroll down">
+          <Image
+            src="/icons/chevron-down-svgrepo-com.svg"
+            alt="Scroll down icon"
+            width={32}
+            height={32}
+            className="text-[var(--blue5)] animate-bounce"
+          />
+        </a>
       </div>
     </div>
   );

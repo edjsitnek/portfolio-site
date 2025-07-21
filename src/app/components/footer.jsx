@@ -54,7 +54,7 @@ export default function Footer() {
         aria-label="Scroll to top"
       >
         <Image
-          src="/icons/up-2-svgrepo-com.svg"
+          src="/icons/chevron-up-svgrepo-com.svg"
           alt="Scroll to top icon"
           width={30}
           height={30}
