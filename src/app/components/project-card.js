@@ -37,7 +37,7 @@ export default function ProjectCard({ title, description, technologies, liveLink
                 href={liveLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[var(--blue4)] text-white px-4 py-2 rounded hover:bg-[var(--blue5)]"
+                className="bg-[var(--blue4)] text-white px-3 md:px-3 py-2 rounded hover:bg-[var(--blue5)] whitespace-nowrap"
               >
                 Live Demo
                 <Image
@@ -54,7 +54,7 @@ export default function ProjectCard({ title, description, technologies, liveLink
                 href={githubLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-[var(--blue4)] text-white px-4 py-2 rounded hover:bg-[var(--blue5)]"
+                className="bg-[var(--blue4)] text-white px-4 py-2 rounded hover:bg-[var(--blue5)] whitespace-nowrap"
               >
                 GitHub
                 <Image
