@@ -1,8 +1,9 @@
 import Image from 'next/image'
 
 export default function HeroSection() {
+  const name = "Ethan Sitnek".split("");
   return (
-    <div className="min-h-screen bg-gradient-to-b from-[var(--blue3)] via-[var(--background)] to-[var(--blue1)] flex flex-col justify-center items-center text-white p-6 md:p-12">
+    <div className="animate-[fade-in_1s_ease] min-h-screen bg-gradient-to-b from-[var(--blue3)] via-[var(--background)] to-[var(--blue1)] flex flex-col justify-center items-center text-white p-6 md:p-12">
       <Image
         src="/images/profile-pic.png"
         alt="Small picture of Ethan Sitnek"
@@ -12,7 +13,16 @@ export default function HeroSection() {
         sizes="(min-width: 768px) 40vw, 100vw"
         priority
       />
-      <h1 className="text-6xl font-bold m-2 text-center text-[var(--blue5)]">Ethan Sitnek</h1>
+      <h1 className="text-5xl md:text-6xl font-bold m-2 text-center text-[var(--blue5)] whitespace-nowrap">
+        {name.map((letter, i) => (
+          <span
+            key={i}
+            className="inline-block transition-transform duration-200 hover:scale-125 hover:text-[var(--blue4)] cursor-default"
+          >
+            {letter === " " ? "\u00A0" : letter}
+          </span>
+        ))}
+      </h1>
       <h2 className="text-3xl mb-10">Web Developer</h2>
 
 
