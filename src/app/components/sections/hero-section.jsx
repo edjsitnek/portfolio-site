@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <div className="animate-[fade-in_1s_ease] min-h-screen bg-gradient-to-b from-[var(--blue3)] via-[var(--background)] to-[var(--blue1)] flex flex-col justify-center items-center text-white p-6 md:p-12">
       <Image
-        src="/images/profile-pic.png"
+        src="/images/profile-pic2.png"
         alt="Small picture of Ethan Sitnek"
         width={150}
         height={150}
@@ -23,7 +23,7 @@ export default function HeroSection() {
           </span>
         ))}
       </h1>
-      <h2 className="text-3xl mb-10">Web Developer</h2>
+      <h2 className="text-3xl mb-10">IT Professional | Software Engineer</h2>
 
 
       <div className="flex gap-4">
