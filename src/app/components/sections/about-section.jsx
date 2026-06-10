@@ -21,9 +21,9 @@ export default function AboutSection() {
         <p className="mb-6 py-2 px-4 md:px-0 md:tracking-wide text-sm leading-5.5 md:leading-8 text-center md:text-left md:text-lg">
           Hi! I'm Ethan. I graduated with a Bachelor's in Computer Science from Towson University in 2022
           and I'm currently pursuing a career in IT support and technical operations.
-          Recently, I've been completing hands-on training through Per Scholas, where I've been
+          Recently, I've completed hands-on training through Per Scholas, where I've been
           building practical skills in troubleshooting, system administration, networking, and
-          customer support, as well as working toward getting my CompTIA A+ certification.
+          customer support, as well as obtained my CompTIA A+ certification.
         </p>
         <p className="mb-6 py-2 px-4 md:px-0 md:tracking-wide text-sm leading-5.5 md:leading-8 text-center md:text-left md:text-lg">
           I enjoy working through technical problems step by step and helping users get back up and running efficiently.
@@ -45,8 +45,8 @@ export default function AboutSection() {
         <h2 className="text-3xl font-semibold mb-4 text-[var(--blue5)]">Technical Skills</h2>
 
         {/* IT Skills Section */}
+        <h3 className="text-xl font-semibold mb-2 text-[var(--blue4)]">IT Skills</h3>
         <div className="mb-6 text-center md:text-left">
-          <h3 className="text-xl font-semibold mb-2 text-[var(--blue4)]">IT Skills</h3>
           <ul className="text-sm md:text-base text-gray-200 space-y-1">
             <li>Troubleshooting (Windows, basic Linux)</li>
             <li>Networking Fundamentals (DNS, DHCP, TCP/IP)</li>
@@ -57,7 +57,7 @@ export default function AboutSection() {
         </div>
 
         {/* Dev Skills Section */}
-        <h3 className="text-xl font-semibold mb-3 text-[var(--blue4)]">Development</h3>
+        <h3 className="text-xl font-semibold mb-2 text-[var(--blue4)]">Development</h3>
         <div className="grid grid-cols-4 sm:grid-cols-3 gap-y-6 gap-x-4">
           {techStack.map((tech) => (
             <div key={tech.name} className="flex flex-col items-center group transition-all">
