@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 const techStack = [
   { name: "JavaScript", src: "/icons/js-svgrepo-com.svg" },
+  { name: "TypeScript", src: "/icons/typescript-svgrepo-com.svg" },
   { name: "React", src: "/icons/react-svgrepo-com.svg" },
   { name: "Next.js", src: "/icons/nextjs-icon-svgrepo-com.svg" },
   { name: "HTML5", src: "/icons/html-5-svgrepo-com.svg" },
@@ -20,7 +21,8 @@ export default function AboutSection() {
         <h1 className="text-4xl font-bold md:ml-6 mb-8 text-center md:text-left text-[var(--blue5)]">About Me</h1>
         <p className="mb-6 py-2 px-4 md:px-0 md:tracking-wide text-sm leading-5.5 md:leading-8 text-center md:text-left md:text-lg">
           Hi! I'm Ethan. I graduated with a Bachelor's in Computer Science from Towson University in 2022
-          and I'm currently pursuing a career in IT support and technical operations.
+          and I'm interested in software engineering and IT roles where I can build technology, solve
+          technical problems, and continue growing as an engineer.
           Recently, I've completed hands-on training through Per Scholas, where I've been
           building practical skills in troubleshooting, system administration, networking, and
           customer support, as well as obtained my CompTIA A+ certification.
